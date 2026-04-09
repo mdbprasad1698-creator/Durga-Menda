@@ -13,7 +13,8 @@ nav{display:flex;justify-content:space-between;padding:20px 10%;background:#0f17
 nav h1{color:#38bdf8;}
 nav ul{display:flex;gap:20px;list-style:none;}
 nav a{color:#fff;text-decoration:none;}
-.hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;}
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;gap:20px;} 
+.hero img{width:160px;height:160px;border-radius:50%;object-fit:cover;border:4px solid #38bdf8;}
 .hero h1{font-size:3rem;}
 .hero p{margin:15px 0;color:#94a3b8;max-width:700px;}
 .btn{padding:10px 20px;background:#38bdf8;border:none;cursor:pointer;}
@@ -21,7 +22,7 @@ section{padding:80px 10%;}
 .title{font-size:2rem;margin-bottom:20px;color:#38bdf8;}
 .card{background:#0f172a;padding:20px;border-radius:10px;margin-bottom:15px;}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-.contact input,.contact textarea{width:100%;padding:10px;margin:10px 0;border:none;border-radius:5px;}
+
 footer{text-align:center;padding:20px;background:#0f172a;}
 </style>
 </head>
@@ -42,6 +43,7 @@ footer{text-align:center;padding:20px;background:#0f172a;}
 </nav>
 
 <section class="hero" id="home">
+<img src="profile.jpg" alt="Durga Profile Picture">
 <h1>Data Scientist & Machine Learning Engineer</h1>
 <p>5+ years of experience building predictive models across healthcare and financial analytics using Machine Learning, NLP, and Time-Series Forecasting.</p>
 <button class="btn">View Work</button>
@@ -55,14 +57,18 @@ footer{text-align:center;padding:20px;background:#0f172a;}
 <section id="skills">
 <h2 class="title">Technical Skills</h2>
 <div class="grid">
-<div class="card"><b>Languages:</b> Python, SQL, R, SAS, Java</div>
-<div class="card"><b>ML Techniques:</b> Regression, Random Forest, SVM, Neural Networks, NLP, Time Series</div>
-<div class="card"><b>Big Data:</b> PySpark, Hive, Kafka, Neo4j</div>
-<div class="card"><b>MLOps:</b> MLflow, DVC, DagsHub, GitHub Actions</div>
-<div class="card"><b>Visualization:</b> Tableau, Power BI, Excel</div>
-<div class="card"><b>Cloud:</b> AWS (S3, EMR, Redshift), Azure, BigQuery</div>
-<div class="card"><b>Databases:</b> MySQL, Teradata, Oracle, Redshift, Azure SQL</div>
-<div class="card"><b>Tools:</b> VS Code, PyCharm, Jupyter, IntelliJ</div>
+<div class="card"><b>Methodologies:</b> SDLC, Agile, Waterfall</div>
+<div class="card"><b>Programming Languages:</b> Python, SQL, R, SAS, Java</div>
+<div class="card"><b>Data & Machine Learning:</b> Regression, Bayesian Methods, Decision Trees, Random Forest, SVM, Neural Networks, KNN, K-Means, Ensemble Learning, NLP, Time Series Forecasting</div>
+<div class="card"><b>MLOps & Model Management:</b> MLflow, DVC, DagsHub</div>
+<div class="card"><b>Data Engineering & Streaming:</b> PySpark, Apache Kafka, Neo4j</div>
+<div class="card"><b>Model Explainability & Monitoring:</b> SHAP, LIME, Grafana</div>
+<div class="card"><b>Visualization & BI:</b> Tableau, Power BI, Advanced Excel</div>
+<div class="card"><b>Cloud & Storage:</b> AWS (S3, EMR, Redshift), Azure, BigQuery</div>
+<div class="card"><b>Databases:</b> MySQL, Teradata, Oracle DB, Amazon Redshift, Azure SQL Database</div>
+<div class="card"><b>Version Control & CI/CD:</b> Git, GitHub, GitHub Actions</div>
+<div class="card"><b>Tools & IDEs:</b> VS Code, PyCharm, Jupyter Notebook, IntelliJ</div>
+<div class="card"><b>Operating Systems:</b> Windows, Linux, macOS</div>
 </div>
 </section>
 
@@ -71,17 +77,18 @@ footer{text-align:center;padding:20px;background:#0f172a;}
 
 <div class="card">
 <h3>Data Scientist - Celgene Corporation (Jun 2024 – Present)</h3>
-<p>Built ML pipelines on AWS using XGBoost, SVM, Random Forest improving readmission prediction by 15% and adherence by 18%. Implemented CI/CD with GitHub Actions.</p>
-<p>Developed NLP models using TensorFlow improving sentiment accuracy by 20% and prediction accuracy by 10%.</p>
-<p>Processed EHR data with PySpark, Kafka, Neo4j enabling real-time analytics and reducing vaccine shortages by 20%.</p>
-<p>Created dashboards in Tableau & Power BI increasing participation by 22% and reducing analysis time by 30%.</p>
+<p>Designed and deployed end-to-end ML pipelines on AWS (S3, SageMaker) using XGBoost, SVM, and Random Forest, with experiment tracking via MLflow and versioning using DVC and GitHub/DagsHub, improving patient readmission prediction by 15% and medication adherence by 18%; implemented CI/CD using GitHub Actions for automated retraining and deployment.</p>
+<p>Built NLP and deep learning models using TensorFlow, incorporating model explainability with SHAP and LIME, to analyze clinical notes and patient feedback, improving sentiment accuracy by 20% and boosting patient outcome predictions by 10%, supported by scalable data pipelines.</p>
+<p>Processed large-scale EHR data using PySpark and Apache Spark, integrating Kafka for real-time data streaming and Neo4j for graph-based patient relationship insights; developed ETL pipelines and time-series forecasting models, reducing vaccine shortages by 20% and improving chronic disease management outcomes by 12%.</p>
+<p>Developed patient segmentation and cohort analysis models using Python, deployed insights through interactive dashboards in Tableau and Power BI, and implemented monitoring using Grafana; leveraged data storage across S3, Azure SQL Database, and BigQuery, increasing program participation by 22%, screening rates by 25%, and reducing analysis turnaround time by 30%.</p>
 </div>
 
 <div class="card">
 <h3>Machine Learning Engineer - Wipro (Nov 2019 – Aug 2022)</h3>
-<p>Developed AI chatbots and content generation systems improving engagement and saving ~$300K.</p>
-<p>Designed NLP frameworks improving user retention by 8% through A/B testing.</p>
-<p>Built retrieval-based systems enhancing response accuracy and performance.</p>
+<p>Developed AI-driven solutions for content generation and chatbot systems, improving user engagement and enabling scalable digital experiences.</p>
+<p>Designed and deployed modular chatbot frameworks using NLP and deep learning techniques, contributing to ~$300K in estimated cost savings and improving user retention by 8% through A/B testing.</p>
+<p>Built and optimized retrieval-based architectures for knowledge-driven applications, enhancing response relevance and overall system performance.</p>
+<p>Collaborated with cross-functional teams to integrate analytics and monitoring tools, enabling real-time tracking of user behavior and continuous product improvements.</p>
 </div>
 
 </section>
@@ -114,15 +121,11 @@ footer{text-align:center;padding:20px;background:#0f172a;}
 <section id="contact">
 <h2 class="title">Contact</h2>
 <div class="contact">
-<input type="text" placeholder="Your Name">
-<input type="email" placeholder="Email">
-<textarea rows="5" placeholder="Message"></textarea>
-<button class="btn">Send Message</button>
-<p>Email: mdbprasad1698@gmail.com</p>
-<p>Phone: 551-229-0405</p>
-<p>Location: Jersey City, NJ (Open to Relocation)</p>
-<p>LinkedIn: linkedin.com/in/durga-menda-1b6a99182/</p>
-<p>GitHub: github.com/mdbprasad1698-creator</p>
+<p><b>Email:</b> mdbprasad1698@gmail.com</p>
+<p><b>Phone:</b> 551-229-0405</p>
+<p><b>Location:</b> Jersey City, NJ - Open to Relocation</p>
+<p><b>LinkedIn:</b> linkedin.com/in/durga-menda-1b6a99182/</p>
+<p><b>GitHub:</b> github.com/mdbprasad1698-creator</p>
 </div>
 </section>
 
